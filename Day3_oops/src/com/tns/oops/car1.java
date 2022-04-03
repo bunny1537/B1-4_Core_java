@@ -2,29 +2,25 @@ package com.tns.oops;
 
 public class car1 {
 
-		String str1,str2,str3;
-		car1()
+		String str;
+		car1(String s)
 		{
-			str1="audi";
-		      str2="bmw";
-		      str3="mercedes";	
+			str=s;
 		}
-		void display()
+		void print()
 		{
-			System.out.println(str1);
-			System.out.println(str2);
-			System.out.println(str3);
+			System.out.println("This is "+str);
 			
-		
 		}
 		public static void main(String[] args) {
-			car1 a =new car1();
-		   a.display();
-		    car1 b =new car1();
-		   b.display();
-		    car1 c =new car1();
-		   c.display();
-
+			car1 a =new car1("audi");
+		 
+		    car1 b =new car1("bmw");
+		   
+		    car1 m =new car1("mercedes-benz");
+		   a.print();
+		   b.print();
+		   m.print();
 	}
 
 }
